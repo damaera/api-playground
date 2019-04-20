@@ -3,14 +3,18 @@ import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import InputSection from "./components/InputSection";
 import ResultSection from "./components/ResultSection";
+import { TabsContext, useTabs, initialTabs } from "./contexts/TabsContext";
 
 /**
  * TODO
  * - useContext global store
  */
-class App extends Component {
-  render() {
-    return (
+function App() {
+  const { tabs, addTab, removeTab } = useTabs(initialTabs);
+  return (
+    <TabsContext.Provider
+      value={{ state: tabs, actions: { addTab, removeTab } }}
+    >
       <div className="flex">
         <Sidebar />
         <div style={{ flex: 1, height: "100vh" }}>
@@ -21,8 +25,8 @@ class App extends Component {
           </div>
         </div>
       </div>
-    );
-  }
+    </TabsContext.Provider>
+  );
 }
 
 export default App;
