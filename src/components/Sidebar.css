@@ -1,0 +1,6 @@
+.sidebar {
+  background: var(--background);
+  width: 200px;
+
+  display: flex;
+}
