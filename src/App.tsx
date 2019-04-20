@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import InputSection from "./components/InputSection";
+import ResultSection from "./components/ResultSection";
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
           <Header />
           <div className="flex">
             <InputSection />
-            {/* <ResultSection /> */}
+            <ResultSection />
           </div>
         </div>
       </div>
