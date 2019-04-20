@@ -4,6 +4,10 @@ import Sidebar from "./components/Sidebar";
 import InputSection from "./components/InputSection";
 import ResultSection from "./components/ResultSection";
 
+/**
+ * TODO
+ * - useContext global store
+ */
 class App extends Component {
   render() {
     return (
