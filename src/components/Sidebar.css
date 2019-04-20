@@ -1,6 +1,6 @@
-.sidebar {
-  background: var(--background);
-  width: 200px;
+.Sidebar {
+  width: 240px;
+  height: 100vh;
 
-  display: flex;
+  background: var(--background);
 }

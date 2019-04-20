@@ -21,6 +21,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,8 +29,13 @@ body {
 }
 
 * {
+  box-sizing: border-box;
+
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
 }

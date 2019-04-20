@@ -1,9 +1,10 @@
 import React from "react";
+import "./Sidebar.css";
 
 function Sidebar() {
   return (
-    <div>
-      <button className="btn">button</button>
+    <div className="Sidebar">
+      <button className="Button">button</button>
     </div>
   );
 }

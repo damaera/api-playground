@@ -1,12 +1,22 @@
-.btn {
-  padding: 6px 15px;
-  font-weight: bold;
-  border-radius: 6px;
+.Button {
   outline: none;
   border: none;
-  font-size: 14px;
+  padding: 6px 15px;
+  border-radius: 4px;
 
   background: var(--blue);
   color: var(--foreground);
+
+  font-weight: bold;
+  font-size: 14px;
+
   cursor: pointer;
+}
+
+.Button.yellow {
+  background: var(--yellow);
+}
+
+.Button.red {
+  background: var(--red);
 }

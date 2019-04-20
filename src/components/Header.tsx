@@ -4,8 +4,8 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header className="header">
-      <button className="btn">Button</button>
+    <header className="Header">
+      <button className="Button red">Button</button>
     </header>
   );
 }
